@@ -16,7 +16,6 @@ server.use((req, res, next) => {
 //*MIDDLEWARES
 server.use(express.json());
 
-// Middleware para agregar "/rickandmorty" antes de cada ruta
 server.use(router);
 
 module.exports = server;
