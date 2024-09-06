@@ -5,6 +5,6 @@ require("dotenv").config();
 const DB_PORT = 5000;
 
 server.listen(DB_PORT, async () => {
-  await conn.sync({ force: true });
+  await conn.sync({ force: false });
   console.log("Server raised in port: " + DB_PORT);
 });
